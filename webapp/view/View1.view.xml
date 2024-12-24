@@ -1,0 +1,270 @@
+<mvc:View controllerName="zbco.controller.View1"
+    xmlns:l="sap.ui.layout" 
+    xmlns:core="sap.ui.core" xmlns:t="sap.ui.table" 
+   xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="viewPadding" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+              <content>
+            <Button id="ExcelUploadButton" text="Excel upload" press="onConfirmDialog" />
+            <t:Table id="table1" rows="{oTableItemModel>/aTableItem}" selectionMode="MultiToggle">
+                <t:columns>
+                    <t:Column id="Tc1" width="13rem">
+                        <Label id="Label1" text="Party Code" />
+                        <t:template>
+                            <Input id="a1" value="{oTableItemModel>Party}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="Tc2" width="11rem">
+                        <Label id="a2" text="Date" />
+                        <t:template>
+                            <!-- <DatePicker placeholder="Enter Date" id="idDate" value="{oTableItemModel>/date}" /> -->
+                            <Input id="a3" value="{oTableItemModel>Date}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc3" width="11rem">
+                        <Label id="a4" text="Sr No" />
+                        <t:template>
+                            <Input id="a5" value="{oTableItemModel>SrNo}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc4" width="11rem">
+                        <Label id="a6" text="Dyeing Sort" />
+                        <t:template>
+                            <!-- <TimePicker id="idTime" value="{oTableItemModel>/time}" /> -->
+                            <Input id="a7" value="{oTableItemModel>DyeingSort}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc5" width="11rem">
+                        <Label id="a8" text="Loom No" />
+                        <t:template>
+                            <Input id="a9" value="{oTableItemModel>LoomNo}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc6" width="11rem">
+                        <Label id="a10" text="Sized Beam No." />
+                        <t:template>
+                            <Input id="a11" value="{oTableItemModel>SizedBeamNo}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc7" width="11rem">
+                        <Label id="a12" text="Sized Set No." />
+                        <t:template>
+                            <Input id="a13" value="{oTableItemModel>SizedSetNo}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <!-- <t:Column  id="Tc8" width="11rem">
+                        <Label text="Sizing Set Sr No" />
+                        <t:template>
+                            <Input value="{oTableItemModel>sizsetSrno}" editable="false" />
+                        </t:template>
+                    </t:Column> -->
+                    <t:Column  id="Tc9" width="13rem">
+                        <Label id="a14" text="Beam No." />
+                        <t:template>
+                            <Input id="a15" value="{oTableItemModel>BeamNo}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc10" width="11rem">
+                        <Label id="a16" text="Greige Sort " />
+                        <t:template>
+                            <Input id="a17" value="{oTableItemModel>GreigeSort}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc11" width="11rem">
+                        <Label id="a18" text="Total Ends" />
+                        <t:template>
+                            <!-- <DatePicker placeholder="Enter Date" id="idDate" value="{oTableItemModel>/date}" /> -->
+                            <Input id="a19" value="{oTableItemModel>TotalEnds}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc12" width="11rem">
+                        <Label id="a20" text="Pick on Fabric" />
+                        <t:template>
+                            <!-- <TimePicker id="idTime" value="{oTableItemModel>/time}" /> -->
+                            <Input id="a21" value="{oTableItemModel>PickOnFabric}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc13" width="11rem">
+                        <Label id="a22" text="Reed" />
+                        <t:template>
+                            <Input id="a23" value="{oTableItemModel>Reed}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc14" width="11rem">
+                        <Label id="a24" text="Reed Space" />
+                        <t:template>
+                            <Input id="a25" value="{oTableItemModel>ReedSpace}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc15" width="11rem">
+                        <Label id="a26" text="Weft 1 Count" />
+                        <t:template>
+                            <Input id="a27" value="{oTableItemModel>Weft1Count}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc16" width="11rem">
+                        <Label id="a28" text="Weft 2 Count" />
+                        <t:template>
+                            <Input id="a29" value="{oTableItemModel>Weft2Count}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column  id="Tc17" width="11rem">
+                        <Label id="a30" text="Mill Name Weft1" />
+                        <t:template>
+                            <Input id="a31" value="{oTableItemModel>MillWeft1}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="tc18" width="11rem">
+                        <Label id="a32" text="Lot No Weft1" />
+                        <t:template>
+                            <Input id="a33" value="{oTableItemModel>LotNoWeft1}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a34" width="11rem">
+                        <Label id="a35" text="Mill Name Weft2" />
+                        <t:template>
+                            <!-- <TimePicker id="idTime" value="{oTableItemModel>/time}" /> -->
+                            <Input id="a36" value="{oTableItemModel>MillWeft2}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a37" width="11rem">
+                        <Label id="a39" text="Lot No Weft2" />
+                        <t:template>
+                            <Input id="a40" value="{oTableItemModel>LotNoWeft2}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a41" width="11rem">
+                        <Label id="a42" text="Beam Getting Date" />
+                        <t:template>
+                            <Input id="a43" value="{oTableItemModel>BeamGettingDate}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a44" width="11rem">
+                        <Label  id="a45" text="Beam Falling Date" />
+                        <t:template>
+                            <Input id="a46" value="{oTableItemModel>BeamFallDate}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a47" width="11rem">
+                        <Label id="a48" text="Beam Length" />
+                        <t:template>
+                            <Input id="a49" value="{oTableItemModel>BeamLength}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a50" width="11rem">
+                        <Label id="a51" text="Balence Meter" />
+                        <t:template>
+                            <Input id="a52" value="{oTableItemModel>BalenceMeter}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a53" width="11rem">
+                        <Label id="a54" text="Planning Beam Pipe No" />
+                        <t:template>
+                            <Input id="a55" value="{oTableItemModel>PlanBeamPipe}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a56" width="11rem">
+                        <Label id="a57" text="Beem Dia" />
+                        <t:template>
+                            <Input id="a58" value="{oTableItemModel>BeemDia}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a59" width="11rem">
+                        <Label id="a60" text="A FST" />
+                        <t:template>
+                            <Input id="a61" value="{oTableItemModel>AFST}" editable="true" />
+                        </t:template>
+                    </t:Column>
+
+
+                    <t:Column  id="a64" width="11rem">
+                        <Label id="a62" text="A WST" />
+                        <t:template>
+                            <Input id="a63" value="{oTableItemModel>AWST}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a65" width="11rem">
+                        <Label id="a66" text="A EFF %" />
+                        <t:template>
+                            <Input id="a67" value="{oTableItemModel>AEFFPer}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a68" width="13rem">
+                        <Label id="a69" text="B FST" />
+                        <t:template>
+                            <Input id="a70" value="{oTableItemModel>BFST}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a71" width="11rem">
+                        <Label id="a72" text="B WST" />
+                        <t:template>
+                            <!-- <DatePicker placeholder="Enter Date" id="idDate" value="{oTableItemModel>/date}" /> -->
+                            <Input id="a73" value="{oTableItemModel>BWST}" editable="true"/>
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a74" width="11rem">
+                        <Label id="a75" text="B EFF" />
+                        <t:template>
+                            <!-- <TimePicker id="idTime" value="{oTableItemModel>/time}" /> -->
+                            <Input id="a76" value="{oTableItemModel>BEFFPer}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a77" width="11rem">
+                        <Label id="a78" text="Act. Prd. Shift  A" />
+                        <t:template>
+                            <Input id="a79" value="{oTableItemModel>ActShiftA}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a80" width="11rem">
+                        <Label id="a81" text="Act. Prd. Shift  B" />
+                        <t:template>
+                            <Input id="a82" value="{oTableItemModel>ActShiftB}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a83" width="11rem">
+                        <Label id="a84" text="RPM" />
+                        <t:template>
+                            <Input id="a85" value="{oTableItemModel>RPM}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a86" width="11rem">
+                        <Label id="a87" text="Cal. Prd. Shift A" />
+                        <t:template>
+                            <Input id="a88" value="{oTableItemModel>CalShiftA}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a89" width="11rem">
+                        <Label  id="a90" text="Cal. Prd. Shift B" />
+                        <t:template>
+                            <Input id="b1" value="{oTableItemModel>CalShiftB}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a92" width="11rem">
+                        <Label id="a93" text="Knotting" />
+                        <t:template>
+                            <Input id="a94" value="{oTableItemModel>Knotting}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a95" width="11rem">
+                        <Label id="a96" text="Re-Knotting" />
+                        <t:template>
+                            <Input id="a97" value="{oTableItemModel>ReKnotting}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="a98" width="11rem">
+                        <Label  id="a99" text="Getting" />
+                        <t:template>
+                            <Input id="b7" value="{oTableItemModel>Getting}" editable="true" />
+                        </t:template>
+                    </t:Column>
+                </t:columns>
+            </t:Table>
+        </content>
+         <footer>
+            <Bar id="b12">
+                <contentRight>
+                    <Button id="bttt1" icon="sap-icon://save" text="Save" type="Emphasized" press="getData" visible="{}" />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
